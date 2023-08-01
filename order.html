@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Place Your Order</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Order Form</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label>Choose a Product:</label>
+        <input type="radio" id="product1" name="product" value="product1" required>
+        <label for="product1">Chicken Lovers</label>
+        <input type="radio" id="product2" name="product" value="product2" required>
+        <label for="product2">Veg Pizza</label>
+
+        <label>Additional Options:</label>
+        <input type="checkbox" id="option1" name="option1" value="option1">
+        <label for="option1">Pepperoni Pizza</label>
+        <input type="checkbox" id="option2" name="option2" value="option2">
+        <label for="option2">Ham and Cheese</label>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment" required>
+          <option value="credit_card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bitcoin">Bitcoin</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
